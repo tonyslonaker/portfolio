@@ -20,11 +20,10 @@ Smaller devices screen example:
 <a name="web-address"></a>
 ## 2. How to Get There
 
-### Open your favorite web browser and enter the following web address to access.
+### Open a web browser and enter the following web address:
 
-```html
 https://tonyslonaker.github.io/portfolio/
-```
+
 <a name="usage"></a>
 ## 3. Usage Tips
 
