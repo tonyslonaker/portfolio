@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Martel:400,700" rel="stylesheet"> <!-- Font style from googleapis -->
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,700|Khula" rel="stylesheet"> <!-- Font style from googleapis -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Tony Slonaker Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <span class="span-background title"> <!-- Class for title background -->
+            <h1>Tony Slonaker Portfolio</h1>
+        </span>
+        <nav>
+            <ul class="nav-effects"> <!-- Header nav bar -->
+                <li>
+                    <!-- Anchor elements -->
+                    <a href="#about-me">About Me</a>
+                </li>
+                <li>
+                    <a href="#work">Work</a>
+                </li>
+                <li>
+                    <a href="#contact-me">Contact Me</a>
+                </li>
+                <li> <!-- This anchor href type action is to download my resume -->
+                    <a href="./assets/resume/tonyslonakerresume.docx" download>Resume</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="logo-image">
+        <a class="navbar-brand" href="./tonyslonaker/tonyslonakerlogo.jpeg"></a>
+    </div>
+    </header>
+    <!-- Hero section will have the image as background -->
+    <section class="hero">
+        <!-- Flex Container-->
+        <div class="hero-subtitle">           
+                <!-- Span used to provide a span background as well as change the opacity of both the span and the text -->
+        </div>
+    </section>
+    <!-- About Me article grid-->
+    <article> 
+        <div id="about-me" class="about-me-wrapper"> <!-- Id's coming from the header nav and a flex wrapper -->
+            <div class="about-me-grid-container"> <!-- About me containter is a grid container -->
+                <div class="about-me-item about-me-title"> <!-- Each item is a grid item -->
+                    <p> About me </p>
+                </div>
+                <div class="about-me-item p1">
+                    <p>Ambitious, driven and thrive on challenges! Always looking for the good while achieving greatness.</p>
+                </div>
+                <div class="about-me-item p2">
+                    <p>I am currently working as Director IT for MyLabs / Juneau Biosciences. My job entails all technology aspects of the lab. This includes current COVID-19 testing and future at home testing for annual health screens.</p>
+                </div>  
+            </div>
+        </div> 
+    </article>
+
+    <!-- Work Projects article grid-->
+    <article>
+        <div id="work" class="work-wrapper"> <!-- Id's coming from the header nav and a flex wrapper -->
+            <div class="work-grid-container"> <!-- Work projects container is a grid container -->
+                <div class="work-title"> <!-- Each item is a grid item -->
+                    <p> Work </p>
+                </div>
+                <!-- Clickable grid link functionality achieved with a javascript function as anchor wrap did not work (tried) as intended for me -->
+                <!-- Alt, title (tooltip) and open in new tab functionality added-->
+                <!-- Each grid item has its own grid location achieved by creating one object/instance per class -->
+                <div onclick="projectClicked('Code-Refactor')" alt="Image Displaying the Horiseon landing Page" title="Horiseon landing Page" target="_blank" style="cursor: pointer;" class="work-item-project Code-Refactor">
+                    <span class="span-background"> <!-- Span added to contain h3, lower text and wrapped background -->
+                        <h3>Horiseon Services</h3>
+                        <span class="lower-text">HTML/CSS</span> <!-- A small class to apply for all grid lower text -->
+                    </span>
+                </div>
+                <!-- All grids below follow same patern as described above until this article container is finished -->
+                <div onclick="projectClicked('run-buddy')" alt="Image Displaying the RUN BUDDY landing Page" title="RUN BUDDY landing page" style="cursor: pointer;" class="work-item-project run-buddy">
+                    <span class="span-background">
+                        <h3>Run Buddy</h3>
+                        <span class="lower-text">HTML/CSS</span>
+                    </span>
+                </div>
+                <div onclick="projectClicked('password-generator')" alt="Image Displaying the Password Generator landing Page" title="Password Generator landing page" style="cursor: pointer;" class="work-item-project password-generator">
+                    <span class="span-background">
+                        <h3>Password Generator</h3>
+                        <span class="lower-text">CSS/Javascript</span>
+                    </span>
+                </div>
+                <div class="work-item-project ghost-item">
+                    <span class="span-background">
+                        <h3>Coming soon!</h3>
+                        <span class="lower-text">TBD</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer content Grid-->
+    <footer>
+        <div id="contact-me" class="footer-wrapper"> <!-- Id's coming from the header nav and a flex wrapper -->
+            <div class="footer-container"> <!-- footer container is a grid container -->
+                <!-- Each grid item has its own grid location achieved by creating one object/instance per class -->
+                <div class="footer-grid-item contact-me"> <!-- Each item is a grid item --> 
+                    Contact Information:
+                </div>
+                <div class="footer-grid-item phone">
+                    <a href="tel:502-758-1949" class="nav-effects">502-758-1949</a>
+                </div>
+                <div class="footer-grid-item email"> 
+                    <a href="mailto:tony.slonaker@gmail.com">tony.slonaker@gmail.com</a>
+                </div>
+                <div class="footer-grid-item git-hub"> 
+                    <a href="https://github.com/tonyslonaker/" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- javascript function direct user to the appropiate landing page based on work project grid cell clicked -->
+    <script> 
+        function projectClicked(input) { /* Function receives 1 string argument for conditional check */
+            var input = input; /* Assigned in put to a variable for conditional check */
+    
+            if (input == "Code-Refactor") { /* If else statement to determine url to go */
+                /* Javascript window.class to open page */
+                window.open("https://tonyslonaker.github.io/Code-Refactor/");
+            } else if (input == "run-buddy") {
+                window.open("https://tonyslonaker.github.io/run-buddy/");
+            } else if (input == 'password-generator') {
+                window.open("https://tonyslonaker.github.io/javascript-challenge-password-generator/");
+            } else {
+                return true; /* Return true - No used as of now but semanticly correct */
+            }
+        };
+            
+    </script>
+</body>
+</html>
+
+
