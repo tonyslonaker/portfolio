@@ -24,7 +24,7 @@ https://tonyslonaker.github.io/portfolio/
 
 Desktop screen:
 
-![nav-menu](./assets/images/portfolionavigationbar)
+![nav-menu](./assets/images/portfolionavigationbar.jpeg)
 
 
 ### Explore the rest of the page by scrolling up or down.
