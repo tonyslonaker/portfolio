@@ -9,14 +9,6 @@
 ### Landing page: Tony Slonaker web portfolio.
 
 
-Desktop screen:
-
-![Top-Page-Area](./assets/images/main-page.JPG?raw=true "Top-Page-Area")
-
-Smaller devices screen example:
-
-![Top-Page-Area](./assets/images/main-page-smaller.JPG?raw=true "Top-Page-Area")
-
 <a name="web-address"></a>
 ## 2. How to Get There
 
@@ -32,7 +24,7 @@ https://tonyslonaker.github.io/portfolio/
 
 Desktop screen:
 
-![nav-menu](./assets/images/nav-menu.JPG?raw=true "Navigational Menu")
+![nav-menu](./assets/images/portfolionavigationbar)
 
 
 ### Explore the rest of the page by scrolling up or down.
